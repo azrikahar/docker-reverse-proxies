@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+    main:
+        image: jwilder/whoami
+        labels:
+            - "traefik.enable=true"
+            - "traefik.http.routers.main.rule=Host(`example.com`) || Host(`www.example.com`)"
+            - "traefik.http.routers.main.entrypoints=web"
+        networks:
+            - traefik-net
+
+    main-api:
+        image: jwilder/whoami
+        labels:
+            - "traefik.enable=true"
+            - "traefik.http.routers.main-api.rule=(Host(`example.com`) && PathPrefix(`/api`)) || (Host(`www.example.com`) && PathPrefix(`/api`))"
+            - "traefik.http.routers.main-api.entrypoints=web"
+        networks:
+            - traefik-net
+
+    sub:
+        image: jwilder/whoami
+        labels:
+            - "traefik.enable=true"
+            - "traefik.http.routers.sub.rule=Host(`sub.example.com`)"
+            - "traefik.http.routers.sub.entrypoints=web"
+        networks:
+            - traefik-net
+
+networks:
+    traefik-net:
+        external: true

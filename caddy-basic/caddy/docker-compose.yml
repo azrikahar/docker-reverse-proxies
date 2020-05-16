@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+    caddy:
+        image: caddy
+        container_name: caddy
+        ports:
+            - 80:80
+        volumes:
+            - ./Caddyfile:/etc/caddy/Caddyfile:ro
+
+networks:
+    default:
+        name: caddy-net

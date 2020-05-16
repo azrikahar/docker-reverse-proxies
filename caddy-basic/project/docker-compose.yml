@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+    main:
+        image: jwilder/whoami
+        networks:
+            - caddy-net
+
+    main-api:
+        image: jwilder/whoami
+        networks:
+            - caddy-net
+
+    sub:
+        image: jwilder/whoami
+        networks:
+            - caddy-net
+
+networks:
+    caddy-net:
+        external: true

@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+    main:
+        image: jwilder/whoami
+        environment:
+            - VIRTUAL_HOST=example.com,www.example.com
+        networks:
+            - nginx-proxy-net
+
+    main-api:
+        image: jwilder/whoami
+        networks:
+            - nginx-proxy-net
+
+    sub:
+        image: jwilder/whoami
+        environment:
+            - VIRTUAL_HOST=sub.example.com
+        networks:
+            - nginx-proxy-net
+
+networks:
+    nginx-proxy-net:
+        external: true

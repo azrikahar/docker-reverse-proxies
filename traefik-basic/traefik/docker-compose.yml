@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+    traefik:
+        image: traefik
+        container_name: traefik
+        command:
+            - "--providers.docker=true"
+            - "--providers.docker.exposedbydefault=false"
+            - "--entrypoints.web.address=:80"
+        ports:
+            - 80:80
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock:ro
+
+networks:
+    default:
+        name: traefik-net

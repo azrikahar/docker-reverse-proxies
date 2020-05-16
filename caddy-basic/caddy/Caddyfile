@@ -1,0 +1,8 @@
+http://example.com, http://www.example.com {
+    reverse_proxy main:8000
+    reverse_proxy /api/* main-api:8000
+}
+
+http://sub.example.com {
+    reverse_proxy sub:8000
+}

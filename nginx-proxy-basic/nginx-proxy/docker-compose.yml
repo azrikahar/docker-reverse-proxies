@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+    nginx-proxy:
+        image: jwilder/nginx-proxy
+        container_name: nginx-proxy
+        ports:
+            - 80:80
+        volumes:
+            - ./vhost.d:/etc/nginx/vhost.d:ro
+            - /var/run/docker.sock:/tmp/docker.sock:ro
+
+networks:
+    default:
+        name: nginx-proxy-net
