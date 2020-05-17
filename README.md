@@ -5,4 +5,4 @@ This repo aims to show example on how to setup reverse proxy using various rever
 For a more detailed guide, do kindly refer to [this Reddit thread I posted](https://redd.it/gkyvke) for now. I will most likely transfer them over to their respective folders over here in the future.
 ## Future plans
 
-- Add `caddy-secure`, `nginx-proxy-secure` and `traefik-secure` folders to showcase HTTPS configuration.
+- Add `caddy-secure`, `haproxy-secure`, `nginx-proxy-secure` and `traefik-secure` folders to showcase HTTPS configuration.

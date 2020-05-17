@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+    haproxy:
+        image: haproxy
+        container_name: haproxy
+        ports:
+            - 80:80
+        volumes:
+            - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
+
+networks:
+    default:
+        name: haproxy-net

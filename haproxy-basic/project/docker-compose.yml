@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+    main:
+        image: jwilder/whoami
+        networks:
+            - haproxy-net
+
+    main-api:
+        image: jwilder/whoami
+        networks:
+            - haproxy-net
+
+    sub:
+        image: jwilder/whoami
+        networks:
+            - haproxy-net
+
+networks:
+    haproxy-net:
+        external: true
