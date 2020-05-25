@@ -1,0 +1,21 @@
+{
+  "name": "docker-reverse-proxies-docs",
+  "version": "0.1.0",
+  "description": "Documentation for Docker Reverse Proxies repo on GitHub",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "workaround-dev": "nodemon --ext md --watch .vuepress --watch . --exec vuepress dev",
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "keywords": [],
+  "author": "Azri Kahar",
+  "license": "MIT",
+  "dependencies": {
+    "vuepress": "^1.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
