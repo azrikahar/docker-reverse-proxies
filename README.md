@@ -36,11 +36,11 @@ For a more detailed guide on this scenario, do kindly refer to [this Reddit thre
 
 ## Future plans
 
-- Add **Secure** (HTTPS) scenario.
+- Add **Secure** (HTTPS) scenario. _[ IN PROGRESS ]_
 - Add **Load Balancing** scenario.
 - Add **Basic Auth** scenario.
 - Explore various variations that enhances the vanilla reverse proxies used above:
   - **lucaslorentz/caddy-docker-proxy** ( [GitHub](https://github.com/lucaslorentz/caddy-docker-proxy) | [Docker Hub](https://hub.docker.com/r/lucaslorentz/caddy-docker-proxy) ): Basically what jwilder/nginx-proxy is for nginx, but for caddy.
   - **jc21/nginx-proxy-manager** ( [GitHub](https://github.com/jc21/nginx-proxy-manager) | [Docker Hub](https://hub.docker.com/r/jc21/nginx-proxy-manager) ): Easy UI based management for Nginx
-- Create documentation site.
+- Create documentation site. _[ IN PROGRESS ]_
 - Possibly a simple checklist/quiz for users to find out which reverse proxies are more suitable for their use case.
