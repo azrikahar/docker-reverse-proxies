@@ -4,12 +4,28 @@ This repo aims to show examples on how to setup reverse proxy using various reve
 
 ## Reverse proxies showcased here
 
-| Reverse Proxy           | Official Site                        | Official Docs                                  | GitHub                                             | Docker Hub                                                       |
-| ----------------------- | ------------------------------------ | ---------------------------------------------- | -------------------------------------------------- | ---------------------------------------------------------------- |
-| **Caddy v2**            | [Link](https://caddyserver.com/v2)   | [Link](https://caddyserver.com/docs/)          | [Link](https://github.com/caddyserver/caddy)       | [Link](https://hub.docker.com/_/caddy)                           |
-| **HAProxy**             | [Link](https://www.haproxy.org/)     | [Link](http://cbonte.github.io/haproxy-dconv/) | [Link](https://github.com/haproxy/haproxy)         | [Link](https://hub.docker.com/r/lucaslorentz/caddy-docker-proxy) |
-| **jwilder/nginx-proxy** |                                      |                                                | [Link](https://github.com/nginx-proxy/nginx-proxy) | [Link](https://hub.docker.com/r/jwilder/nginx-proxy/)            |
-| **Traefik v2**          | [Link](https://containo.us/traefik/) | [Link](https://docs.traefik.io/)               | [Link](https://github.com/containous/traefik)      | [Link](https://hub.docker.com/_/traefik)                         |
+| Reverse Proxy           | Official Site        | Official Docs        | GitHub                             | Docker Hub                            |
+| ----------------------- | -------------------- | -------------------- | ---------------------------------- | ------------------------------------- |
+| **Caddy v2**            | [Link][caddy site]   | [Link][caddy docs]   | [Link][caddy github]               | [Link][caddy dockerhub]               |
+| **HAProxy**             | [Link][haproxy site] | [Link][haproxy docs] | [Link][haproxy github]             | [Link][haproxy dockerhub]             |
+| **jwilder/nginx-proxy** |                      |                      | [Link][jwilder/nginx-proxy github] | [Link][jwilder/nginx-proxy dockerhub] |
+| **Traefik v2**          | [Link][traefik site] | [Link][traefik docs] | [Link][traefik github]             | [Link][traefik dockerhub]             |
+
+<!-- Links used above to keep table clean -->
+[caddy site]: https://caddyserver.com/v2
+[caddy docs]: https://caddyserver.com/docs
+[caddy github]: https://github.com/caddyserver/caddy
+[caddy dockerhub]: https://hub.docker.com/_/caddy
+[haproxy site]: https://www.haproxy.org
+[haproxy docs]: http://cbonte.github.io/haproxy-dconv
+[haproxy github]: https://github.com/haproxy/haproxy
+[haproxy dockerhub]: https://hub.docker.com/r/lucaslorentz/caddy-docker-proxy
+[jwilder/nginx-proxy github]: https://github.com/nginx-proxy/nginx-proxy
+[jwilder/nginx-proxy dockerhub]: https://hub.docker.com/r/jwilder/nginx-proxy
+[traefik site]: https://containo.us/traefik
+[traefik docs]: https://docs.traefik.io
+[traefik github]: https://github.com/containous/traefik
+[traefik dockerhub]: https://hub.docker.com/_/traefik
 
 ## Currently available scenarios
 
