@@ -1,0 +1,8 @@
+{	
+    email   your@mail.com
+    acme_ca https://acme-staging-v02.api.letsencrypt.org/directory
+}
+
+testing.example.com {
+    reverse_proxy testing:8000
+}

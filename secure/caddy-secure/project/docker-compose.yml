@@ -1,0 +1,11 @@
+version: "3.5"
+
+services:
+    testing:
+        image: jwilder/whoami
+        networks:
+            - caddy-net
+
+networks:
+    caddy-net:
+        external: true

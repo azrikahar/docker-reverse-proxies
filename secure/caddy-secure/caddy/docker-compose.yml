@@ -1,0 +1,21 @@
+version: "3.5"
+
+services:
+    caddy:
+        image: caddy:2
+        container_name: caddy
+        ports:
+            - 80:80
+            - 443:443
+        volumes:
+            - ./Caddyfile:/etc/caddy/Caddyfile:ro
+            - data:/data
+            - config:/config
+
+volumes:
+    data:
+    config:
+
+networks:
+    default:
+        name: caddy-net
