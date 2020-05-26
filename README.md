@@ -5,6 +5,18 @@
   <h1 align="center">Docker Reverse Proxies</h1>
 </p>
 
+<p align="center">
+  <a href="https://dockerreverseproxies.netlify.app/" target="_blank">
+    <img src="https://badgen.net/badge/docs/vuepress/green" alt="license">
+  </a>
+  <a href="https://app.netlify.com/sites/dockerreverseproxies/deploys" target="_blank">
+    <img src="https://api.netlify.com/api/v1/badges/1821c63e-48aa-4ea4-ac0e-5150ba9eb2a0/deploy-status" alt="netlify badge">
+  </a>
+  <a href="https://github.com/azrikahar/docker-reverse-proxies/blob/master/LICENSE" target="_blank">
+    <img src="https://badgen.net/github/license/azrikahar/docker-reverse-proxies" alt="license">
+  </a>
+</p>
+
 This repo aims to show examples on how to setup reverse proxy using various reverse proxies available in Docker containers. Since we will setup each reverse proxy to do the exact same thing in every scenario, hopefully it gives a better understanding for someone familiar with one of the reverse proxy but not the other ones.
 
 ## Reverse proxies included
