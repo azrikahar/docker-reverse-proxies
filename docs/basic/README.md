@@ -2,10 +2,15 @@
 
 _[ UNDER CONSTRUCTION ]_
 
-## Scenario Description
+## Scenario description
+
+Shows the bare minimum of setting up each reverse proxy with HTTP only. They resolve the exact same domain, subdomain and subpath.
 
 ## Things to know before proceeding
 
 ## Examples
 
-[Caddy](./caddy.md)
+- [Caddy](./caddy.md)
+- HAProxy
+- Nginx-proxy
+- Traefik
