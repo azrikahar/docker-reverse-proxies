@@ -1,8 +1,13 @@
-# Docker Reverse Proxies
+<p align="center">
+  <a href="https://dockerreverseproxies.netlify.app/" target="_blank">
+    <img width="auto" height="250" src="https://raw.githubusercontent.com/azrikahar/docker-reverse-proxies/master/docs/.vuepress/public/logo.svg" alt="logo">
+  </a>
+  <h1 align="center">Docker Reverse Proxies</h1>
+</p>
 
 This repo aims to show examples on how to setup reverse proxy using various reverse proxies available in Docker containers. Since we will setup each reverse proxy to do the exact same thing in every scenario, hopefully it gives a better understanding for someone familiar with one of the reverse proxy but not the other ones.
 
-## Reverse proxies showcased here
+## Reverse proxies included
 
 | Reverse Proxy           | Official Site        | Official Docs        | GitHub                             | Docker Hub                            |
 | ----------------------- | -------------------- | -------------------- | ---------------------------------- | ------------------------------------- |
@@ -27,12 +32,16 @@ This repo aims to show examples on how to setup reverse proxy using various reve
 [traefik github]: https://github.com/containous/traefik
 [traefik dockerhub]: https://hub.docker.com/_/traefik
 
-## Currently available scenarios
+## Scenarios
 
-### Basic
-This scenario showcases the bare minimum of setting up the reverse proxies with HTTP only. They resolves the exact same domain, subdomain and subpath.
+| Scenario   | Summary                                                                                                                                    | Link                      |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------- |
+| **Basic**  | Shows the bare minimum of setting up each reverse proxy with HTTP only. They resolve the exact same domain, subdomain and subpath.         | [View scenario][docs-basic] |
+| **Secure** | Shows how to setup HTTPS and get valid certs from Let's Encrypt (LE). This includes how to get certs from LE's staging server for testing. | [View scenario][docs-secure] |
 
-For a more detailed guide on this scenario, do kindly refer to [this Reddit thread I posted](https://redd.it/gkyvke) for now.
+<!-- Links to documentation for each scenario in above table -->
+[docs-basic]: https://dockerreverseproxies.netlify.app/basic
+[docs-secure]: https://dockerreverseproxies.netlify.app/secure
 
 ## Future plans
 
@@ -44,3 +53,7 @@ For a more detailed guide on this scenario, do kindly refer to [this Reddit thre
   - **jc21/nginx-proxy-manager** ( [GitHub](https://github.com/jc21/nginx-proxy-manager) | [Docker Hub](https://hub.docker.com/r/jc21/nginx-proxy-manager) ): Easy UI based management for Nginx
 - Create documentation site. _[ IN PROGRESS ]_
 - Possibly a simple checklist/quiz for users to find out which reverse proxies are more suitable for their use case.
+
+## License
+
+[MIT](https://github.com/azrikahar/docker-reverse-proxies/blob/master/LICENSE)
