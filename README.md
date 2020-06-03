@@ -12,6 +12,9 @@
   <a href="https://app.netlify.com/sites/dockerreverseproxies/deploys" target="_blank">
     <img src="https://api.netlify.com/api/v1/badges/1821c63e-48aa-4ea4-ac0e-5150ba9eb2a0/deploy-status" alt="netlify badge">
   </a>
+  
+  ![visitors](https://visitor-badge.glitch.me/badge?page_id=azrikahar.docker-reverse-proxies)
+
   <a href="https://github.com/azrikahar/docker-reverse-proxies/blob/master/LICENSE" target="_blank">
     <img src="https://badgen.net/github/license/azrikahar/docker-reverse-proxies" alt="license">
   </a>
